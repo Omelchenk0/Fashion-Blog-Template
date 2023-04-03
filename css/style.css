@@ -1,0 +1,167 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	background: #fafafa;
+	font-size: 14px;
+	color: #252b42;
+	font-weight: 500;
+	font-family: 'PT Serif';
+}
+/* ---------------------------------------------------------------------------- */
+:root{
+--background-color: F2F2F2;
+--font-color: #171717;
+--laptop: 1200px;
+--tablet: 992px;
+--phone: 768px;
+--small-phone: 479px;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+   background-color: var(--background-color);
+}
+/* ---------------------------------------------------------------------------- */
+._container {
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+
+
+/* --------------------WRAPPER-------------------------------------------------------- */
+
+
+
+
+
+
+/* -------------------HEADER--------------------------------------------------------- */
+
+.hearder {
+   position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+
+.header__container {
+   min-height: 100px;
+   max-width: 1760px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0px 80px;
+}
+
+
+
+.header__logo {
+   color: #171717;
+   text-decoration: none;
+   font-family: PT Serif;
+   font-size: 25px;
+   font-weight: 700;
+   line-height: 33px;
+   letter-spacing: 2.5px;
+}
+
+.header__menu {
+}
+
+.menu {
+}
+
+.menu__list {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.menu__item {
+
+}
+
+.menu__item:not(:last-child) {
+	margin: 0px 21px 0px 0px;
+}
+
+.menu__link {
+   font-family: PT Serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 19px;
+   letter-spacing: 0px;
+   color: var(--font-color);
+}
+
+/*---------hamburger---------------*/
+
+
+
+
+
+
+@media (max-width: 1200px){
+   .header__container {
+      margin: 0px 70px;
+   }
+}
+
+@media (max-width: 992px){
+   .header__container {
+      margin: 0px 50px;
+   }
+}
+
+@media (max-width: 768px){
+
+   .header__container {
+      margin: 0px 40px;
+   }
+}
+
+@media (max-width: 550px){
+   .header__container { 
+      margin: 0px 20px;
+   }
+}
